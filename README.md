@@ -61,30 +61,6 @@ A `DataFrame` with added columns:
 
 ---
 
-## Example
-
-```python
-import pandas as pd
-from datetime import datetime
-
-data = {
-    "Comp_Number": [1, 1, 1, 1],
-    "Point": ["P1"]*4,
-    "Direction": ["X"]*4,
-    "Timestamp": pd.to_datetime([
-        "2025-01-01", "2025-01-10", "2025-01-20", "2025-02-01"
-    ]),
-    "Value": [10, 11, 15, 30],
-}
-
-df = pd.DataFrame(data)
-
-result = check_trend_refactored(df, ["Value"])
-print(result)
-```
-
----
-
 ## Dependencies
 
 Install required packages:
